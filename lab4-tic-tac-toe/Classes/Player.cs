@@ -17,6 +17,7 @@ namespace Lab04_TicTacToe.Classes
 		/// </summary>
 		public bool IsTurn { get; set; }
 
+		
 
 		public Position GetPosition(Board board)
 		{
@@ -65,7 +66,10 @@ namespace Lab04_TicTacToe.Classes
 			}
 			else
 			{
+				//make the function recursive
+
 				Console.WriteLine("This space is already occupied");
+				TakeTurn(board);
 			}
 		}
 	}
